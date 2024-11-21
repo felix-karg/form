@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <header>
+    <title>My Little Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </header>
+  <body>
+    <header>
+      <h1>My Little Form</h1>
+      <p>Please give us some more information about you</p>
+    </header>
+    <main>
+      <form action="" method="POST">
+        <div>
+          <label for="name-input">Name: </label>
+          <input id="name-input" type="text" required>
+        </div>
+        <div>
+          <label for="email-input">Email: </label>
+          <input id="email-input" type="email" required>
+        </div>
+        <div>
+          <label for="age-input">Age: </label>
+          <input id="age-input" type="number" min="1" max="120">
+        </div>
+        <div class="radio-buttons">
+            <p>Gender:</p>
+            <input id="male-radio" type="radio" name="gender" value="m">
+            <label for="male-radio">Male</label>
+            <input id="female-radio" type="radio" name="gender" value="f">
+            <label for="female-radio">Female</label>
+          </div>
+        <div>
+          <label for="skill-select">Which new skill would you like to learn next?</label>
+          <select id="skill-select" name="skill">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+          </select>
+        </div>
+        <div class="checkboxes">
+          <p>What do you want to accomplish by learning the new skill?</p>
+          <input id="fun-checkbox" type="checkbox" name="goal" value="fun">
+          <label for="fun-checkbox"><span>Have fun</span></label>
+          <input id="job-checkbox" type="checkbox" name="goal" value="job">
+          <label for="job-checkbox">Find a new job</label>
+          <input id="grow-checkbox" type="checkbox" name="goal" value="grow">
+          <label for="grow-checkbox">Grow in my current job</label>
+        </div>
+        <div>
+          <label for="comments">Comments: </label>
+          <textarea rows="5"></textarea>
+        </div>
+        <div>
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
